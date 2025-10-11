@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@prisma/client": "^6.15.0",
     "axios": "^1.12.2",
     "bcryptjs": "^3.0.2",
     "cookie-parser": "^1.4.7",
@@ -21,5 +22,8 @@
     "jsonwebtoken": "^9.0.2",
     "morgan": "^1.10.1",
     "prettier": "^3.6.2"
+  },
+  "devDependencies": {
+    "prisma": "^6.15.0"
   }
 }
