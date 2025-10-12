@@ -1,6 +1,8 @@
 import express from "express"; 
 import dotenv from "dotenv";
 import morgan from "morgan";
+
+import authRouter from "./routes/auth.routes.js";
                                                                                                                                                                                                                                                                                                                                                                                        
 dotenv.config();
 
@@ -21,7 +23,7 @@ app.get('/', (req, res) => {
     })
 })
 
-app.use("api/v1/auth" , authRoutes);
+app.use("api/v1/auth" , authRouter);
 
 app.listen(port, () =>{ 
     console.log(`Example app listening at http://localhost:${port}`)
