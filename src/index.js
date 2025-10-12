@@ -1,7 +1,7 @@
 import express from "express"; 
 import dotenv from "dotenv";
 import morgan from "morgan";
-
+                                                                                                                                                                                                                                                                                                                                                                                       
 dotenv.config();
 
 const app = express();
@@ -20,6 +20,8 @@ app.get('/', (req, res) => {
         message: "Welcome to leetcode api "
     })
 })
+
+app.use("api/v1/auth" , authRoutes);
 
 app.listen(port, () =>{ 
     console.log(`Example app listening at http://localhost:${port}`)
