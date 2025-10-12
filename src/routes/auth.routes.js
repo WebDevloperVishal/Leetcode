@@ -1,5 +1,5 @@
 import express from "express";
-import { login, logout, register } from "../contollers/auth.contoller.js";
+import { checkAuth, login, logout, register } from "../contollers/auth.contoller.js";
 
 const router = express.Router();
 
@@ -11,5 +11,6 @@ router.post('/login',login);
 // 3.logout
 router.post('/logout',logout);
 // 4.check
+router.post('/check',checkAuth);
 
 export default router;
